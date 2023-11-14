@@ -67,7 +67,10 @@ const product = {
 
 // product.price
 
-const { productBrand: brand } = product;
-console.log(brand);
-const {price:$} = product
-console.log($)
+
+//Destructuring 
+const { productBrand: brand , price : $ , productName : name } = product;
+// console.log(brand);
+// console.log(name)
+// console.log($)
+
