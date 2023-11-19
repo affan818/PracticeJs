@@ -35,5 +35,11 @@ return ` ${username} just loggedin`
 // console.log(loginUserMessage('affan'))
 console.log(loginUserMessage())
 
+// one more type 
+function loggedin (username  = 'affu') {
+    return `${username} just loggedin`
+}
+
+console.log(loggedin())
 
 
