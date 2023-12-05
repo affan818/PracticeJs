@@ -11,68 +11,53 @@
     </ul>
   </body>
   <script>
-      const addNew = (li) => {
-        const list = document.createElement("li");
-        list.textContent = li;
-     document.querySelector('.course').appendChild(list)
-      };
-    addNew("python");
-    addNew("JAVA");
-    addNew("C #");
-    addNew("C ++");
+    // const addNew = (li) => {
+    //   const list = document.createElement("li");
+    //   list.textContent = li;
+    //   document.querySelector(".course").appendChild(list);
+    // };
+    // addNew("python");
+    // addNew("JAVA");
+    // addNew("C #");
+    // addNew("C ++");
 
     const addOptimize = (l) => {
       const list = document.createElement("li");
       list.appendChild(document.createTextNode(l));
-      document.querySelector('.course').appendChild(list)
+      document.querySelector(".course").appendChild(list);
     };
     addOptimize("Ruby");
     addOptimize("Rust");
-    
+    addOptimize("C")
+
     //Edit
 
-    const firstLang = document.querySelector("li:first-child")
+    const firstLang = document.querySelector("li:first-child");
     console.log(firstLang);
-    const li = document.createElement('li')
-    li.textContent = 'Go'
-    firstLang.replaceWith(li)
+    const li = document.createElement("li");
+    li.textContent = "Go";
+    firstLang.replaceWith(li);
 
-    const secondLang = document.querySelector('li:nth-child(2)')
+    const secondLang = document.querySelector("li:nth-child(2)");
     console.log(secondLang);
-    secondLang.outerHTML = '<li>JavaScript</li>'
+    secondLang.outerHTML = "<li>JavaScript</li>";
 
-    function edit (course,lang) {
-const list = document.querySelector(lang)
-    const created = document.createElement('li')
-    created.textContent = course
-    list.replaceWith(created)
-    // list.outerHTML = '<li>'+course+'</li>'
-
+    function edit(course, lang) {
+      const lastList = document.querySelector(lang);
+      const listNew = document.createElement("li");
+      listNew.textContent = course;
+      lastList.replaceWith(listNew)
     }
-    edit('Python','li:nth-child(2)')
-    edit('JavaScript','li:nth-child(1)')
-    edit('GoLang','li:nth-child(7)')
-    edit('.Net','li:nth-child(5)')
+    // edit("JavaScript","li:first-child")
+    edit(".NET","li:last-child")
 
-    function remove (item) {
-document.querySelector(item).remove()
+    function remove(item) {
+      document.querySelector(item).remove();
     }
-    remove('li:nth-child(2)')
+    // remove("li:nth-child(2)");
     // remove('li:nth-child(1)')
     // remove('li:nth-child(1)')
     // remove('li:nth-child(1)')
     // remove('li:nth-child(1)')
-
-
-
-
-
-
-
-   
-
-  
-
-
   </script>
 </html>
