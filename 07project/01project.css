@@ -1,0 +1,40 @@
+.main {
+  margin: 100px auto 100px;
+  width: 80%;
+  text-align: center;
+}
+.first {
+  color: blue;
+}
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  color: blue;
+  text-align: center;
+  font-size: large;
+  margin: 5px;
+  border: solid black 2px;
+}
+.button:hover{
+background-color: rgb(188, 220, 249);
+}
+/*:: #red {
+  background-color: red;
+}
+#black {
+  background-color: black;
+  border: solid red 2px;
+}
+#purple {
+  background-color: purple;
+}
+#pink {
+  background-color: pink;
+}
+#paleturquoise {
+  background-color: paleturquoise;
+}
+#gold {
+  background-color: gold;
+} */
