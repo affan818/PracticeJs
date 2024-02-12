@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calls/Classes/Binds</title>
+  </head>
+  <body>
+    <button>click</button>
+  </body>
+  <script>
+    class button {
+      constructor() {
+        this.library = "react";
+        this.server = "http://localhost:8080";
+        document
+          .querySelector("button")
+          .addEventListener("click", this.handleClick.bind(this));
+      }
+      handleClick() {
+        console.log("button clicked");
+        console.log(this.library);
+        console.log(this.server);
+      }
+    }
+
+    const app = new button();
+
+    //Behind the scene
+
+    // function button() {
+    //   this.library = "react";
+    //   this.server = "http://localhost:8080";
+
+    //   document
+    //     .querySelector("button")
+    //     .addEventListener("click", this.handleClick.bind(this));
+    // }
+
+    // button.prototype.handleClick = function () {
+    //   console.log("button clicked");
+    //   console.log(this.library);
+    //   console.log(this.server);
+    // };
+
+    // const app = new button();
+  </script>
+</html>
